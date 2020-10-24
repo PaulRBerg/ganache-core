@@ -16,6 +16,8 @@ declare module "ganache-core" {
 
   namespace Ganache {
     export interface IProviderOptions {
+      _chainId?: number;
+      _chainIdRpc?: number;
       account_keys_path?: string;
       accounts?: object[];
       allowUnlimitedContractSize?: boolean;
